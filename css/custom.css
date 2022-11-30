@@ -2,7 +2,9 @@
 body { 
   font: 18px/1.3em 'ColaborateThinRegular', sans-serif;
   margin-right: auto;
-  margin-left: auto;}
+  margin-left: auto;
+  table-layout: fixed;
+  word-wrap:break-word;}
 
 h1 {
   font: 32px/1em 'GibsonBold', serif;
@@ -14,11 +16,6 @@ h2 {
   font: 22px/1em 'GibsonBold', serif;
   text-transform: uppercase;
   color: #827E7E;
-}
-
-.container-fluid{
-  width: 90%;
-
 }
 
 #logo {
@@ -34,6 +31,9 @@ h2 {
   background: rgba(255,255,255,0.8);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 5px;
+}
+.row {
+  width: 80%;
 }
 .info h4 {
   margin: 0 0 5px;
@@ -51,4 +51,12 @@ h2 {
   float: left;
   margin-right: 8px;
   opacity: 0.7;
+}
+.CsvToHtmlTable {
+  margin: 0 auto; 
+  width: 100%;
+  clear: both; 
+  border-collapse: collapse; 
+  table-layout: fixed;
+  word-wrap: break-word;
 }

@@ -15,13 +15,19 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
 </head>
 
+<style>
+.container-fluid{width: auto}
+.tdiv.col-sm-12{width: auto}
+
+</style>
+
 <body>
     <div class="container-fluid">
         <main class="row">
             <div class="col">
                 <h1>SDR Data Streams Table</h1>
                 <p>Full dataset available at (insert link here).</p>
-                <p> Here's a table of Collected Data Streams from the Science for Disaster Reduction Initiative. 
+                <p>Here's a table of Collected Data Streams from the Science for Disaster Reduction Initiative. 
                 </p>
 
                 <div id="table-container"></div>
@@ -56,9 +62,15 @@
                 delimiter: '"'
             },
             datatables_options: {
-                paging: false,
-                autoWidth: true,
-                scrollsX: false,
+                paging: true,
+    //             "columnDefs": [
+    //                 { "width": "10px", "targets": 0 },
+    //                 { "width": "40px", "targets": 1 },
+    //                 { "width": "700px", "targets": 2 },
+    //                 { "width": "70px", "targets": 3 },
+    //                 { "width": "70px", "targets": 4 },
+    //                 { "width": "70px", "targets": 5 }
+    // ],
             },
             custom_formatting: [
                 [4, format_link]
