@@ -4,7 +4,8 @@ body {
   margin-right: auto;
   margin-left: auto;
   table-layout: fixed;
-  word-wrap:break-word;}
+  word-wrap:break-word;
+}
 
 h1 {
   font: 32px/1em 'GibsonBold', serif;

@@ -25,11 +25,11 @@
     <div class="container-fluid">
         <main class="row">
             <div class="col">
-                <h1>SDR Data Streams Table</h1>
-                <p>Full dataset available at (insert link here).</p>
-                <p>Here's a table of Collected Data Streams from the Science for Disaster Reduction Initiative. 
+                <h1>Wildfire Environmental and Health-Related Data Sets</h1>
+                <p><a href="https://docs.google.com/spreadsheets/d/17AnegZiMPYDJE5z_PzVCBf4I44cbvPID/edit?usp=sharing&ouid=118171274145542898674&rtpof=true&sd=true">Full dataset</a> with additional columns is available as an alternative The linked dataset includes additional comments, 
+                    points of contact, and other potentially relevant material.</p>
+                <p>The table below is an abbreviated, more accessible version of the table linked above. Typing in any phrase into the search bar, will search every resource within the table. 
                 </p>
-
                 <div id="table-container"></div>
             </div>
         </main>
@@ -63,17 +63,17 @@
             },
             datatables_options: {
                 paging: true,
-    //             "columnDefs": [
-    //                 { "width": "10px", "targets": 0 },
-    //                 { "width": "40px", "targets": 1 },
-    //                 { "width": "700px", "targets": 2 },
-    //                 { "width": "70px", "targets": 3 },
-    //                 { "width": "70px", "targets": 4 },
-    //                 { "width": "70px", "targets": 5 }
-    // ],
+                 "columnDefs": [
+                        // { "width": "10px", "targets": 0 },
+                        // { "width": "40px", "targets": 1 },
+                         { "width": "200px", "targets": 2 },
+                        // { "width": "70px", "targets": 3 },
+                        { "width": "700px", "targets": 4 },
+                        { "width": "700px", "targets": 5 }
+    ],
             },
             custom_formatting: [
-                [4, format_link]
+                [2, format_link]
             ]
         });
     </script>
